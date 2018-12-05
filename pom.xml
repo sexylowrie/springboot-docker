@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<docker.repository>47.104.23.150:5000</docker.repository>
+		<docker.repository>140.143.156.50:5000</docker.repository>
 	</properties>
 
 	<dependencies>
@@ -64,7 +64,7 @@
 				<version>0.4.13</version>
 				<configuration>
 					<imageName>${project.build.finalName}</imageName>
-					<dockerDirectory>./docker</dockerDirectory>
+					<dockerDirectory>./</dockerDirectory>
 					<!--<baseImage>java:8</baseImage>-->
 					<!--<cmd>["java", "-version"]</cmd>-->
 					<!--<entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>-->
