@@ -83,27 +83,27 @@
 							<goal>build</goal>
 						</goals>
 					</execution>
-					<execution>
-						<id>tag-image</id>
-						<phase>package</phase>
-						<goals>
-							<goal>tag</goal>
-						</goals>
-						<configuration>
-							<image>${project.build.finalName}</image>
-							<newName>${docker.repository}/${project.build.finalName}</newName>
-						</configuration>
-					</execution>
-					<execution>
-						<id>push-image</id>
-						<phase>package</phase>
-						<goals>
-							<goal>push</goal>
-						</goals>
-						<configuration>
-							<imageName>${docker.repository}/${project.build.finalName}</imageName>
-						</configuration>
-					</execution>
+					<!--<execution>-->
+						<!--<id>tag-image</id>-->
+						<!--<phase>package</phase>-->
+						<!--<goals>-->
+							<!--<goal>tag</goal>-->
+						<!--</goals>-->
+						<!--<configuration>-->
+							<!--<image>${project.build.finalName}</image>-->
+							<!--<newName>${docker.repository}/${project.build.finalName}</newName>-->
+						<!--</configuration>-->
+					<!--</execution>-->
+					<!--<execution>-->
+						<!--<id>push-image</id>-->
+						<!--<phase>package</phase>-->
+						<!--<goals>-->
+							<!--<goal>push</goal>-->
+						<!--</goals>-->
+						<!--<configuration>-->
+							<!--<imageName>${docker.repository}/${project.build.finalName}</imageName>-->
+						<!--</configuration>-->
+					<!--</execution>-->
 				</executions>
 
 			</plugin>
