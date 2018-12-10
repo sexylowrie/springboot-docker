@@ -95,16 +95,16 @@
 							<newName>${docker.repository}/${project.build.finalName}</newName>
 						</configuration>
 					</execution>
-					<execution>
-						<id>push-image</id>
-						<phase>package</phase>
-						<goals>
-							<goal>push</goal>
-						</goals>
-						<configuration>
-							<imageName>${docker.repository}/${project.build.finalName}</imageName>
-						</configuration>
-					</execution>
+					<!--<execution>-->
+						<!--<id>push-image</id>-->
+						<!--<phase>package</phase>-->
+						<!--<goals>-->
+							<!--<goal>push</goal>-->
+						<!--</goals>-->
+						<!--<configuration>-->
+							<!--<imageName>${docker.repository}/${project.build.finalName}</imageName>-->
+						<!--</configuration>-->
+					<!--</execution>-->
 				</executions>
 
 			</plugin>
