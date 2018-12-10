@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<docker.repository>140.143.156.50:5000</docker.repository>
+		<!--<docker.repository>118.190.149.38:5000</docker.repository>-->
 	</properties>
 
 	<dependencies>
@@ -94,16 +95,16 @@
 							<newName>${docker.repository}/${project.build.finalName}</newName>
 						</configuration>
 					</execution>
-					<!--<execution>-->
-						<!--<id>push-image</id>-->
-						<!--<phase>package</phase>-->
-						<!--<goals>-->
-							<!--<goal>push</goal>-->
-						<!--</goals>-->
-						<!--<configuration>-->
-							<!--<imageName>${docker.repository}/${project.build.finalName}</imageName>-->
-						<!--</configuration>-->
-					<!--</execution>-->
+					<execution>
+						<id>push-image</id>
+						<phase>package</phase>
+						<goals>
+							<goal>push</goal>
+						</goals>
+						<configuration>
+							<imageName>${docker.repository}/${project.build.finalName}</imageName>
+						</configuration>
+					</execution>
 				</executions>
 
 			</plugin>
